@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <app-navbar></app-navbar>
-    <div class="container">
+    <div class="container my-3">
       Hello Vue
     </div>
   </div>

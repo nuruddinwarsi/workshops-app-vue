@@ -1,18 +1,18 @@
 <template
   ><nav class="navbar navbar-expand navbar-light bg-light">
-    <ul class="nav navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"
-          >Home <span class="sr-only">(current)</span></a
-        >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Workshops List</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Feedback</a>
-      </li>
-    </ul>
+    <div class="container px-2">
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Workshops List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Feedback</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 </template>
 
