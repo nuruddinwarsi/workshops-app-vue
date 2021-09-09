@@ -3,10 +3,10 @@
     <div class="container px-2">
       <ul class="nav navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Workshops List</a>
+          <a class="nav-link" href="/workshops">Workshops List</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Feedback</a>

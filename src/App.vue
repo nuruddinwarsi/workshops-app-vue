@@ -2,7 +2,7 @@
   <div id="app">
     <app-navbar></app-navbar>
     <div class="container my-3">
-      Hello Vue
+      <router-view></router-view>
     </div>
   </div>
 </template>
