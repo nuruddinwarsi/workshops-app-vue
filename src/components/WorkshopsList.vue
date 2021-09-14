@@ -2,11 +2,7 @@
   <div>
     <h1>List of workshops</h1>
     <hr />
-    <div class="d-flex justify-content-center" v-if="status === 'LOADING'">
-      <div class="spinner-border" role="status">
-        <!-- <span class="sr-only">Loading...</span> -->
-      </div>
-    </div>
+    <AppSpinner v-if="status === 'LOADING'" size="large"></AppSpinner>
     <div v-else-if="status === 'LOADED'">
       <div class="row">
         <div
@@ -27,6 +23,7 @@
 <script>
 import { getWorkshops } from '@/services/workshops.js';
 import WorkshopCard from './WorkshopCard.vue';
+
 export default {
   name: 'WorkshopsList',
   components: {
