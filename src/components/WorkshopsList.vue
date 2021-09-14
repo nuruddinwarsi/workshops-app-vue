@@ -14,9 +14,18 @@
         </div>
       </div>
     </div>
-    <div v-else-if="status === 'ERROR'" class="alert alert-danger" role="alert">
+    <AppAlert
+      v-else-if="status === 'ERROR'"
+      class="alert alert-danger"
+      role="alert"
+    >
+      <template v-slot:heading>
+        <h4>Error</h4>
+        <hr />
+      </template>
+      <template v-slot:body>{{ error.message }} </template>
       {{ error.message }}
-    </div>
+    </AppAlert>
   </div>
 </template>
 
