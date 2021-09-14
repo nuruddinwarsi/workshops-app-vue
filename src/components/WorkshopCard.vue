@@ -11,8 +11,8 @@
       <h4 class="card-title">{{ workshop.name }}</h4>
       <div class="card-text">
         <div>
-          {{ workshop.startDate }}
-          {{ workshop.endDate }}
+          {{ workshop.startDate | date('local') }}
+          {{ workshop.endDate | date('local') }}
         </div>
         <div>
           <span> {{ workshop.time }} </span>
@@ -31,6 +31,9 @@ export default {
       type: Object,
       required: true,
     },
+  },
+  methods: {
+    formatDate() {},
   },
 };
 </script>
