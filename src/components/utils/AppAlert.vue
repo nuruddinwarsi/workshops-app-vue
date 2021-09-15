@@ -1,5 +1,5 @@
 <template>
-  <div class="alert alert-danger" role="alert">
+  <div :class="`alert alert-${theme}`" role="alert">
     <header class="alert-heading">
       <slot name="heading"></slot>
     </header>
@@ -10,10 +10,11 @@
 </template>
 
 <script>
+import ThemeMixin from '@/mixins/theme.js';
+
 export default {
-  props: {
-    message: String,
-  },
+  name: 'AppAlert',
+  mixins: [ThemeMixin],
 };
 </script>
 

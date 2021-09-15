@@ -2,7 +2,11 @@
   <div>
     <h1>List of workshops</h1>
     <hr />
-    <AppSpinner v-if="status === 'LOADING'" size="large"></AppSpinner>
+    <AppSpinner
+      v-if="status === 'LOADING'"
+      size="large"
+      theme="primary"
+    ></AppSpinner>
     <div v-else-if="status === 'LOADED'">
       <div class="row">
         <div
@@ -18,6 +22,7 @@
       v-else-if="status === 'ERROR'"
       class="alert alert-danger"
       role="alert"
+      theme="danger"
     >
       <template v-slot:heading>
         <h4>Error</h4>
