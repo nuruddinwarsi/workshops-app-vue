@@ -1,5 +1,8 @@
 <template>
-  <div class="card">
+  <router-link
+    class="card text-reset text-decoration-none my-3"
+    :to="`/workshops/${workshop.id}`"
+  >
     <div class="card-body">
       <div class="card-img-container">
         <img
@@ -20,7 +23,7 @@
         <div class="my-3" v-html="workshop.description"></div>
       </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
