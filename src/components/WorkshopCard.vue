@@ -45,4 +45,17 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.card:hover {
+  box-shadow: 0px 0px 4px 0px goldenrod;
+  background-color: #fcfcfc;
+}
+
+.card-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 150px;
+  margin: 10px 0;
+}
+</style>
