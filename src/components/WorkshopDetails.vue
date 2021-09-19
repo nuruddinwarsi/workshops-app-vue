@@ -59,14 +59,18 @@
         </div>
       </div>
     </template>
+    <SessionsList :sessions="workshop.session" />
   </div>
 </template>
 
 <script>
 import { getWorkshopById } from '@/services/workshops';
-
+import SessionsList from '@/components/SessionsList';
 export default {
   name: 'WorkshopDetails',
+  components: {
+    SessionsList,
+  },
   props: {
     id: {
       type: [Number, String],
