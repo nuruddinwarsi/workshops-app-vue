@@ -59,7 +59,7 @@
         </div>
       </div>
     </template>
-    <SessionsList :sessions="workshop.session" />
+    <SessionsList :sessions="workshop.sessions" />
   </div>
 </template>
 
