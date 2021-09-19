@@ -20,7 +20,7 @@
         <div>
           <span> {{ workshop.time }} </span>
         </div>
-        <div class="my-3" v-html="workshop.description"></div>
+        <div class="my-3" v-show="isShown" v-html="workshop.description"></div>
       </div>
     </div>
   </router-link>
@@ -33,6 +33,10 @@ export default {
     workshop: {
       type: Object,
       required: true,
+    },
+    isShown: {
+      type: Boolean,
+      default: false,
     },
   },
   methods: {
