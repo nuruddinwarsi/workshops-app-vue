@@ -1,6 +1,12 @@
 <template>
   <div>
     <h1>List of workshops</h1>
+    <button
+      class="btn btn-primary btn-sm "
+      @click="isDescriptionShown = !isDescriptionShown"
+    >
+      Toggle Descriptions
+    </button>
     <hr />
     <AppSpinner
       v-if="status === 'LOADING'"
@@ -14,7 +20,10 @@
           v-for="workshop in workshops"
           :key="workshop.id"
         >
-          <WorkshopCard :workshop="workshop"></WorkshopCard>
+          <WorkshopCard
+            :workshop="workshop"
+            :isShown="isDescriptionShown"
+          ></WorkshopCard>
         </div>
       </div>
     </div>
@@ -48,6 +57,7 @@ export default {
       workshops: [],
       status: 'LOADING',
       error: null,
+      isDescriptionShown: false,
     };
   },
 
